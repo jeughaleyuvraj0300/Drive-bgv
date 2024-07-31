@@ -1,0 +1,110 @@
+.dashboard {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .verification-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .charts {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chart {
+    background-color: #f9f9f9;
+    margin-right: 10px;
+    /* padding: 10px; */
+    width: 30%;
+  }
+  
+  .activity {
+    background-color: #f9f9f9;
+    margin-left: 10px;
+    padding: 10px;
+    width: 70%;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .verification-cards {
+      flex-direction: column;
+    }
+  
+    .charts {
+      flex-direction: column;
+    }
+  
+    .chart, .activity {
+      margin: 0 0 20px 0;
+      height: auto; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .verification-cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      margin: 10px 0;
+    }
+  
+    .charts {
+      flex-direction: column;
+    }
+  
+    .chart, .activity {
+      margin: 0 0 20px 0;
+      height: auto; /* Adjust height for smaller screens */
+    }
+  }
+  
+  
+  /* Media Query for 1920x1080 screen */
+  @media (min-width: 1920px) and (min-height: 1080px) {
+    .dashboard {
+      padding: 40px;
+    }
+  
+    .verification-cards {
+      justify-content: space-around;
+    }
+  
+    .card {
+      padding: 30px;
+      margin: 15px;
+    }
+  
+    .charts {
+      justify-content: space-around;
+    }
+  
+    .chart {
+      margin-right: 20px;
+      
+    }
+    
+    .activity {
+      padding: 20px;
+      margin-left: 20px;
+      height: 650px; 
+    }
+  }
+  

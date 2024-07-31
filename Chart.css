@@ -1,0 +1,30 @@
+
+.chart-placeholder {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  .history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e5e5e5;
+    height: 200px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+  }
+  @media (min-width: 1920px) and (min-height: 1080px) {
+    .chart-placeholder{
+        height: 322px;
+    }
+    .history{
+        height: 323px;
+    }
+  }
+  
